@@ -232,7 +232,7 @@ h6,
     }
 
     .navbar-light .navbar-brand img {
-        max-height: 45px;
+        max-height: 80px;
     }
 }
 
@@ -325,10 +325,10 @@ h6,
 /*** Screenshot ***/
 .screenshot-carousel {
     position: relative;
-    width: 253px;
+    /***width: 253px;
     height: 500px;
     padding: 15px;
-    margin-right: 30px;
+    margin-right: 30px;***/
 }
 
 .screenshot-carousel::before {
@@ -338,15 +338,17 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: url(../img/screenshot-frame.png) center center no-repeat;
-    background-size: 253px 500px;
+    /***background: url(../img/screenshot-frame.png) center center no-repeat;
+    background-size: 253px 500px;***/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     z-index: 1;
 }
 
 .screenshot-carousel .owl-item img {
     position: relative;
-    width: 223px;
-    height: 470px;
+   /** width: 223px;**/
+    height: 350px;
 }
 
 .screenshot-carousel .owl-dots {
@@ -510,4 +512,19 @@ h6,
 
 
 /*** Nithya ***/
-
+.projects .owl-dots {
+position: absolute;
+    bottom: -10%;
+    top: 0;
+    left: 0;
+    transform: translateY(0%);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.projects .owl-dot {
+   margin:5px 5px;
+}

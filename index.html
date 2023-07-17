@@ -29,6 +29,104 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+$(".con-slide").hide();
+$(".main-slide").hide();
+$(".loan-slide").hide();
+$(".doc-slide").hide();
+
+  $(".con").click(function(){ 
+$(".con-slide").slideToggle("slow");
+$(".main-slide").slideUp(); 
+$(".loan-slide").slideUp();
+$(".doc-slide").slideUp();
+ });
+  $(".main").click(function(){ 
+$(".con-slide").slideUp();
+$(".main-slide").slideToggle("slow");
+$(".loan-slide").slideUp();
+$(".doc-slide").slideUp();
+ });
+  $(".loan").click(function(){ 
+$(".con-slide").slideUp();
+$(".main-slide").slideUp(); 
+$(".loan-slide").slideToggle("slow");
+$(".doc-slide").slideUp();
+ });
+  $(".doc").click(function(){ 
+$(".con-slide").slideUp();
+$(".main-slide").slideUp(); 
+$(".loan-slide").slideUp();
+$(".doc-slide").slideToggle("slow");
+ });
+  
+$(".health-slide").hide();
+$(".car-slide").hide();
+$(".bike-slide").hide();
+$(".marine-slide").hide();
+$(".shopkeeper-slide").hide();
+$(".life-slide").hide();
+
+
+  $(".health").click(function(){ 
+$(".health-slide").slideToggle("slow");
+$(".car-slide").slideUp();
+$(".bike-slide").slideUp();
+$(".marine-slide").slideUp();
+$(".shopkeeper-slide").slideUp();
+$(".life-slide").slideUp();
+ });
+
+  $(".car").click(function(){ 
+$(".health-slide").slideUp();
+$(".car-slide").slideToggle("slow");
+$(".bike-slide").slideUp();
+$(".marine-slide").slideUp();
+$(".shopkeeper-slide").slideUp();
+$(".life-slide").slideUp();
+ });
+
+  $(".bike").click(function(){ 
+$(".health-slide").slideUp();
+$(".car-slide").slideUp();
+$(".bike-slide").slideToggle("slow");
+$(".marine-slide").slideUp();
+$(".shopkeeper-slide").slideUp();
+$(".life-slide").slideUp();
+ });
+
+  $(".marine").click(function(){ 
+$(".health-slide").slideUp();
+$(".car-slide").slideUp();
+$(".bike-slide").slideUp();
+$(".marine-slide").slideToggle("slow");
+$(".shopkeeper-slide").slideUp();
+$(".life-slide").slideUp();
+ });
+  $(".shopkeeper").click(function(){ 
+$(".health-slide").slideUp();
+$(".car-slide").slideUp();
+$(".bike-slide").slideUp();
+$(".marine-slide").slideUp();
+$(".shopkeeper-slide").slideToggle("slow");
+$(".life-slide").slideUp();
+ });
+  $(".life").click(function(){ 
+$(".health-slide").slideUp();
+$(".car-slide").slideUp();
+$(".bike-slide").slideUp();
+$(".marine-slide").slideUp();
+$(".shopkeeper-slide").slideUp();
+$(".life-slide").slideToggle("slow");
+});
+
+});
+</script>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -56,9 +154,8 @@
                     <div class="navbar-nav mx-auto py-0">
                         <a href="#home" class="nav-item nav-link active">Home</a>
                         <a href="#feature" class="nav-item nav-link">Services</a>
-                        <a href="#pricing" class="nav-item nav-link">Upcoming projects</a>
-			<a href="#pricing" class="nav-item nav-link">Ongoing projects</a>
-			<a href="#about" class="nav-item nav-link">Referral Program</a>
+                        <a href="#upcoming" class="nav-item nav-link">Our projects</a>
+			<a href="#referral" class="nav-item nav-link">Referral Program</a>
                         <a href="#review" class="nav-item nav-link">Review</a>
                         <a href="#footer" class="nav-item nav-link">Contact</a>
                     </div>
@@ -77,13 +174,16 @@ Sastha HD</h1>
                         </div>
                         <div class="col-lg-5 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
                             <div class="owl-carousel screenshot-carousel">
-                                <img class="img-fluid" src="img/screenshot-1.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-2.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-3.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-4.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-5.png" alt="">
+                                <img class="img-fluid" src="img/img-1.jpg" alt="">
+                                <img class="img-fluid" src="img/img-2.jpg" alt="">
+                                <img class="img-fluid" src="img/img-3.jpg" alt="">
+                                <img class="img-fluid" src="img/img-4.jpg" alt="">
+                                <img class="img-fluid" src="img/img-5.jpg" alt="">
                             </div>
                         </div>
+
+
+
                     </div>
                 </div>
             </div>
@@ -101,36 +201,44 @@ Sastha HD</h1>
                     <h1 class="mb-5">SERVICES</h1>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s" width="500" height="600">
-                        <div class="feature-item bg-light rounded p-4">
 
-                            <h5 class="mb-3">CONSTRUCTION</h5>
-
+ <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+ 	<div class="feature-item bg-light rounded p-4">
+	<h5 class="mb-3">CONSTRUCTION</h5>
 <ul>
-	<li>Building Construction</li>
-	<li>Maintenance</li>
-	<li>Approval and Loan processing</li>
-	<li>Legal documents</li>
-
-
+	<li class="con" style="cursor: pointer; color: #28a304;">Building Construction</li>
+<p class="con-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<li class="main" style="cursor: pointer; color: #28a304;">Maintenance</li>
+<p class="main-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<li class="loan" style="cursor: pointer; color: #28a304;">Approval and Loan processing</li>
+<p class="loan-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<li class="doc" style="cursor: pointer; color: #28a304;">Legal documents</li>
+<p class="doc-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 </ul>
+	</div>
+ </div>
 
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="feature-item bg-light rounded p-4">
-                                <h5 class="mb-3">ICICI Lombard General Insurance</h5>
-<p class="m-0">
+<div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+	<div class="feature-item bg-light rounded p-4">
+	<h5 class="mb-3">ICICI Lombard General Insurance</h5>
+
 <ul>
-	<li>Health Insurance</li>
-	<li>Car Insurance</li>
-	<li>Two-Wheeler Insurance</li>
-	<li>Marine Insurance</li>
-	<li>Shopkeeper Insurance</li>
-	<li>Life Insurance</li>
-</p>
-                        </div>
-                    </div>
+	<li class="health" style="cursor: pointer; color: #28a304;">Health Insurance</li>
+<p class="health-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<li class="car" style="cursor: pointer; color: #28a304;">Car Insurance</li>
+<p class="car-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<li class="bike" style="cursor: pointer; color: #28a304;">Two-Wheeler Insurance</li>
+<p class="bike-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<li class="marine" style="cursor: pointer; color: #28a304;">Marine Insurance</li>
+<p class="marine-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<li class="shopkeeper" style="cursor: pointer; color: #28a304;">Shopkeeper Insurance</li>
+<p class="shopkeeper-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<li class="life" style="cursor: pointer; color: #28a304;">Life Insurance</li>
+<p class="life-slide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</ul>
+	</div>
+</div>
+
                     
                 </div>
             </div>
@@ -138,12 +246,63 @@ Sastha HD</h1>
         <!-- Features End -->
 
 
+<!-- our projects Start -->
+
+        <div class="container-xxl py-5" id="upcoming">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <!--<h5 class="text-primary-gradient fw-medium">App Features</h5> -->
+                    <h1 class="mb-5">Our projects</h1>
+                </div>
+                <div class="row g-4">
+<div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+	<h5 class="mb-3">Upcoming projects</h5>
+
+
+<div class="col-lg-10 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel projects">
+                                <img class="img-fluid" src="img/projects/IMG-1.jpg" alt="">
+                                <img class="img-fluid" src="img/projects/IMG-2.jpg" alt="">
+                                <img class="img-fluid" src="img/projects/IMG-3.jpg" alt="">
+                                <img class="img-fluid" src="img/projects/IMG-4.jpg" alt="">
+                                <img class="img-fluid" src="img/projects/IMG-5.jpg" alt="">
+				<img class="img-fluid" src="img/projects/IMG-6.jpg" alt="">
+				<img class="img-fluid" src="img/projects/IMG-7.jpg" alt="">
+				<img class="img-fluid" src="img/projects/IMG-8.jpg" alt="">
+				<img class="img-fluid" src="img/projects/IMG-9.jpg" alt="">
+                            </div>
+                        </div>
+</div>
+<div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+	<h5 class="mb-3">Ongoing projects</h5>
+
+<div class="col-lg-10 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel projects">
+                                <img class="img-fluid" src="img/projects/IMG-10.jpg" alt="">
+                                <img class="img-fluid" src="img/projects/IMG-12.jpg" alt="">
+                                <img class="img-fluid" src="img/projects/IMG-13.jpg" alt="">
+                                <img class="img-fluid" src="img/projects/IMG-14.jpg" alt="">
+                                <img class="img-fluid" src="img/projects/IMG-15.jpg" alt="">
+				<img class="img-fluid" src="img/projects/IMG-16.jpg" alt="">
+				<img class="img-fluid" src="img/projects/IMG-17.jpg" alt="">
+				<img class="img-fluid" src="img/projects/IMG-18.jpg" alt="">
+				<img class="img-fluid" src="img/projects/IMG-11.jpg" alt="">
+                            </div>
+                        </div>
+</div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+<!-- our projects End -->
 
 
 
 
         <!-- Referral-Reward Start -->
-        <div class="container-xxl py-5" id="about">
+        <div class="container-xxl py-5" id="referral">
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -161,260 +320,6 @@ Sastha HD</h1>
         <!-- Referral-Reward End -->
 
 
-       
-
-
-        <!-- Screenshot Start -->
-        <!-- <div class="container-xxl py-5">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-                        <h5 class="text-primary-gradient fw-medium">Screenshot</h5>
-                        <h1 class="mb-4">User Friendly interface And Very Easy To Use Fitness App</h1>
-                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
-                        <p><i class="fa fa-check text-primary-gradient me-3"></i>Diam dolor diam ipsum et tempor sit</p>
-                        <p><i class="fa fa-check text-primary-gradient me-3"></i>Aliqu diam amet diam et eos labore</p>
-                        <p class="mb-4"><i class="fa fa-check text-primary-gradient me-3"></i>Clita erat ipsum et lorem et sit</p>
-                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Read More</a>
-                    </div>
-                    <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="owl-carousel screenshot-carousel">
-                            <img class="img-fluid" src="img/screenshot-1.png" alt="">
-                            <img class="img-fluid" src="img/screenshot-2.png" alt="">
-                            <img class="img-fluid" src="img/screenshot-3.png" alt="">
-                            <img class="img-fluid" src="img/screenshot-4.png" alt="">
-                            <img class="img-fluid" src="img/screenshot-5.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Screenshot End -->
-
-
-        <!-- Process Start -->
-        <!-- <div class="container-xxl py-5">
-            <div class="container py-5 px-lg-5">
-                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">How It Works</h5>
-                    <h1 class="mb-5">3 Easy Steps</h1>
-                </div>
-                <div class="row gy-5 gx-4 justify-content-center">
-                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
-                                <i class="fa fa-cog fa-3x text-white"></i>
-                            </div>
-                            <h5 class="mt-4 mb-3">Install the App</h5>
-                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
-                                <i class="fa fa-address-card fa-3x text-white"></i>
-                            </div>
-                            <h5 class="mt-4 mb-3">Setup Your Profile</h5>
-                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
-                                <i class="fa fa-check fa-3x text-white"></i>
-                            </div>
-                            <h5 class="mt-4 mb-3">Enjoy The Features</h5>
-                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Process Start -->
-
-
-        <!-- Download Start -->
-        <!-- <div class="container-xxl py-5">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="img/about.png">
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <h5 class="text-primary-gradient fw-medium">Download</h5>
-                        <h1 class="mb-4">Download The Latest Version Of Our App</h1>
-                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
-                        <div class="row g-4">
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                                <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
-                                    <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
-                                    <div class="ms-3">
-                                        <p class="text-white mb-0">Available On</p>
-                                        <h5 class="text-white mb-0">App Store</h5>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                                <a href="" class="d-flex bg-secondary-gradient rounded py-3 px-4">
-                                    <i class="fab fa-android fa-3x text-white flex-shrink-0"></i>
-                                    <div class="ms-3">
-                                        <p class="text-white mb-0">Available On</p>
-                                        <h5 class="text-white mb-0">Play Store</h5>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Download End -->
-
-
-        <!-- Pricing Start -->
-        <!-- <div class="container-xxl py-5" id="pricing">
-            <div class="container py-5 px-lg-5">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">Pricing Plan</h5>
-                    <h1 class="mb-5">Choose Your Plan</h1>
-                </div>
-                <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
-                    <ul class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
-                        <li class="nav-item">
-                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Monthly</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">Yearly</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content text-start">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Starter Plan</h4>
-                                            <span>Powerful & Awesome Features</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>14.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded border">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Advance Plan</h4>
-                                            <span>Powerful & Awesome Features</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>24.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Premium Plan</h4>
-                                            <span>Powerful & Awesome Features</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>34.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-2" class="tab-pane fade p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Starter Plan</h4>
-                                            <span>Powerful & Awesome Features</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>114.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded border">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Advance Plan</h4>
-                                            <span>Powerful & Awesome Features</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>124.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Premium Plan</h4>
-                                            <span>Powerful & Awesome Features</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>134.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Pricing End -->
 
 
         <!-- Testimonial Start -->
@@ -461,7 +366,7 @@ Sastha HD</h1>
                     </div>
                     <div class="testimonial-item rounded p-4">
                         <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-3.jpg" style="width: 85px; height: 85px;">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-1.jpg" style="width: 85px; height: 85px;">
                             <div class="ms-4">
                                 <h5 class="mb-1">Client Name</h5>
                                 <p class="mb-1">Profession</p>
@@ -478,7 +383,7 @@ Sastha HD</h1>
                     </div>
                     <div class="testimonial-item rounded p-4">
                         <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-4.jpg" style="width: 85px; height: 85px;">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-2.jpg" style="width: 85px; height: 85px;">
                             <div class="ms-4">
                                 <h5 class="mb-1">Client Name</h5>
                                 <p class="mb-1">Profession</p>
@@ -499,14 +404,17 @@ Sastha HD</h1>
         <!-- Testimonial End -->
 
 
-        <!-- Contact Start
+
+
+
+<!-- Contact Start -->
         <div class="container-xxl py-5" id="contact">
             <div class="container py-5 px-lg-5">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
                     <h1 class="mb-5">Get In Touch!</h1>
                 </div>
-                <!-- <div class="row justify-content-center">
+                <div class="row justify-content-center">
                     <div class="col-lg-9">
                         <div class="wow fadeInUp" data-wow-delay="0.3s">
                             <p class="text-center mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
@@ -543,11 +451,13 @@ Sastha HD</h1>
                             </form>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
-        Contact End -->
-        
+        <!-- Contact End -->
+
+
+
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s" id="footer">
@@ -555,23 +465,24 @@ Sastha HD</h1>
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">
                         <h4 class="text-white mb-4">Address</h4>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>4/333, Shop No.15, above Axis Bank ATM, Kottaipirivu, Mettupalayam, Bilichi, Tamilnadu-641019</p>
+			<p><i class="fa fa-map-marker-alt me-3"></i>4/333, Shop No.15, above Axis Bank ATM, Kottaipirivu, Mettupalayam, Bilichi, Tamilnadu-641019</p>
                         <p><i class="fa fa-phone-alt me-3"></i>+91 98946 76969</p>
                         <p><i class="fa fa-envelope me-3"></i>sasthahd2023@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.facebook.com/profile.php?id=100094068045014"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.linkedin.com/in/sastha-hd-constructions-and-services-135854281/"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h4 class="text-white mb-4">Quick Link</h4>
-                        <a class="btn btn-link" href="">REFERRAL PROGRAM</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>
+
+                        <a class="btn btn-link" href="">Services</a>
+                        <a class="btn btn-link" href="">Upcoming projects</a>
+			<a class="btn btn-link" href="">Ongoing projects</a>
+			<a class="btn btn-link" href="">Referral Program</a>
+                        <a class="btn btn-link" href="">Review</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h4 class="text-white mb-4">WhatsApp us</h4>
@@ -580,8 +491,10 @@ Sastha HD</h1>
                     <div class="col-md-6 col-lg-3">
                         <h4 class="text-white mb-4">Newsletter</h4>
                         <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                        
+
+<div class="position-relative w-100 mt-3">
+			   <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="textarea" placeholder="Write something.." style="height: 48px;">
                             <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
                         </div>
                     </div>
@@ -606,6 +519,8 @@ Sastha HD</h1>
         <!-- Footer End -->
 
 
+
+
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
     </div>
@@ -621,6 +536,8 @@ Sastha HD</h1>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+
 </body>
 
 </html>
