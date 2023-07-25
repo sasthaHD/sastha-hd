@@ -127,6 +127,31 @@ $(".life-slide").slideToggle("slow");
 });
 </script>
 
+<script>
+var nameError = document.getElementById('name-error');
+var emailError = document.getElementById('email-error');
+var phoneError = document.getElementById('phone-error');
+var messageError = document.getElementById('message-error');
+var submitError = document.getElementById('submit-error');
+
+
+function validateName(){
+	var name = document.getElementById('contact-name').value;
+
+	if(name.length == 0){
+		nameError.innerHTML = 'Name is required';
+		return false;
+	}
+	if(name.match(/^[A-Za-z]*\s{1}[A-za-z]*$/)){
+		nameError.innerHTML = 'Write full name';
+		return false;
+	}
+	nameError.innerHtml = 'valid';
+	return true;
+}
+</script>
+
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -419,34 +444,35 @@ Sastha HD</h1>
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <input type="text" class="form-control" id="contact-name" placeholder="Your Name" onkeyup="validateName()">
                                             <label for="name">Your Name</label>
-					    <!-- <span id="name-error" style="color:red;">Name is required</span> -->
+					    <span id="name-error" style="color:red;"></span>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
                                             <input type="email" class="form-control" id="email" placeholder="Your Email">
                                             <label for="email">Your Email</label>
-					    <!-- <span id="email-error" style="color:red;">Email is required</span> -->
+					    <span id="email-error" style="color:red;"></span>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
                                             <input type="tel" class="form-control" id="subject" placeholder="12345 67890">
                                             <label for="subject">Phone Number</label>
-					    <!-- <span id="phone-error" style="color:red;">Phone Number is required</span> -->
+					    <span id="phone-error" style="color:red;"></span>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
                                             <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
                                             <label for="message">Message</label>
-					    <!-- <span id="message-error" style="color:red;">Message is required</span> -->
+					    <span id="message-error" style="color:red;"></span>
                                         </div>
                                     </div>
                                     <div class="col-12 text-center">
                                         <button class="btn btn-primary-gradient rounded-pill py-3 px-5" type="submit">Send Message</button>
+					<span id="submit-error" style="color:red;"></span>
                                     </div>
                                 </div>
                             </form>
@@ -525,9 +551,7 @@ Sastha HD</h1>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-<script>
 
-</script>
 
 </body>
 
