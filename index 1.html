@@ -131,7 +131,7 @@ function sendMail() {
     var link = "mailto:sasthahd@gmail.com"
              + "?cc=rpnithya90@gmail.com"
              + "&subject=" + encodeURIComponent("This is my subject")
-             + "&body=" + encodeURIComponent(document.getElementById('myText').value)
+             + "&body=" + encodeURIComponent(document.getElementById('contact').value)
     ;
     
     window.location.href = link;
@@ -156,7 +156,7 @@ function sendMail() {
                 <div class="row justify-content-center">
                     <div class="col-lg-9">
                         <div class="wow fadeInUp" data-wow-delay="0.3s">
-		<form>
+		<form  onsubmit="return validateForm(contact)" >
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
