@@ -205,33 +205,35 @@ $(".life-slide").slideToggle("slow");
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-	
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
 
 </body>
 <script>  
-function sendEmail() {
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let phone = document.getElementById("phone").value;
-    let message = document.getElementById("msg").value;
-    let finalmessage = `Name : ${name} <br>  Email : ${email} <br>  Phone : ${phone} <br>  Message : ${msg} <br>`;
+var nodemailer = require('nodemailer');
 
-    Email.send({
-        Host : "smtp.mailtrap.io",
-        Username : "username",
-        Password : "password",
-        To : 'them@website.com',
-        From : "sasthahd2023@gmail.com",
-        Subject : "Mail from website",
-        Body : finalmessage
-    }).then(
-      message => alert(message)
-    );
-}
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'youremail@gmail.com',
+    pass: 'yourpassword'
+  }
+});
+
+var mailOptions = {
+  from: 'youremail@gmail.com',
+  to: 'myfriend@yahoo.com',
+  subject: 'Sending Email using Node.js',
+  text: 'That was easy!'
+};
+
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
 </script>
 </html>
