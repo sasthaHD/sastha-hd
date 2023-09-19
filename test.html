@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sastha HD Construction & Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo-1.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+<script>
+$(document).ready(function(){
+
+$(".con-slide").hide();
+$(".main-slide").hide();
+$(".loan-slide").hide();
+$(".doc-slide").hide();
+
+  $(".con").click(function(){ 
+$(".con-slide").slideToggle("slow");
+$(".main-slide").slideUp(); 
+$(".loan-slide").slideUp();
+$(".doc-slide").slideUp();
+ });
+  $(".main").click(function(){ 
+$(".con-slide").slideUp();
+$(".main-slide").slideToggle("slow");
+$(".loan-slide").slideUp();
+$(".doc-slide").slideUp();
+ });
+  $(".loan").click(function(){ 
+$(".con-slide").slideUp();
+$(".main-slide").slideUp(); 
+$(".loan-slide").slideToggle("slow");
+$(".doc-slide").slideUp();
+ });
+  $(".doc").click(function(){ 
+$(".con-slide").slideUp();
+$(".main-slide").slideUp(); 
+$(".loan-slide").slideUp();
+$(".doc-slide").slideToggle("slow");
+ });
+  
+$(".health-slide").hide();
+$(".car-slide").hide();
+$(".bike-slide").hide();
+$(".marine-slide").hide();
+$(".shopkeeper-slide").hide();
+$(".life-slide").hide();
+
+
+  $(".health").click(function(){ 
+$(".health-slide").slideToggle("slow");
+$(".car-slide").slideUp();
+$(".bike-slide").slideUp();
+$(".marine-slide").slideUp();
+$(".shopkeeper-slide").slideUp();
+$(".life-slide").slideUp();
+ });
+
+  $(".car").click(function(){ 
+$(".health-slide").slideUp();
+$(".car-slide").slideToggle("slow");
+$(".bike-slide").slideUp();
+$(".marine-slide").slideUp();
+$(".shopkeeper-slide").slideUp();
+$(".life-slide").slideUp();
+ });
+
+  $(".bike").click(function(){ 
+$(".health-slide").slideUp();
+$(".car-slide").slideUp();
+$(".bike-slide").slideToggle("slow");
+$(".marine-slide").slideUp();
+$(".shopkeeper-slide").slideUp();
+$(".life-slide").slideUp();
+ });
+
+  $(".marine").click(function(){ 
+$(".health-slide").slideUp();
+$(".car-slide").slideUp();
+$(".bike-slide").slideUp();
+$(".marine-slide").slideToggle("slow");
+$(".shopkeeper-slide").slideUp();
+$(".life-slide").slideUp();
+ });
+  $(".shopkeeper").click(function(){ 
+$(".health-slide").slideUp();
+$(".car-slide").slideUp();
+$(".bike-slide").slideUp();
+$(".marine-slide").slideUp();
+$(".shopkeeper-slide").slideToggle("slow");
+$(".life-slide").slideUp();
+ });
+  $(".life").click(function(){ 
+$(".health-slide").slideUp();
+$(".car-slide").slideUp();
+$(".bike-slide").slideUp();
+$(".marine-slide").slideUp();
+$(".shopkeeper-slide").slideUp();
+$(".life-slide").slideToggle("slow");
+});
+
+});
+</script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+ 
+
+
+
+
+
+<!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
+                    <h1 class="mb-5">Get In Touch!</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+		<form onsubmit="sendEmail(); reset(); return false;">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating" id="contact">
+                                            <input type="text" id="name" class="form-control" placeholder="Your Name" name="Name" required 
+						on invalid="this.setCustomValidity('Please enter your name')" 
+						on input="this.setCustomValidity('')">
+						<label for="Name">Your Name <span style="color:red;">*</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" id="email" class="form-control" placeholder="Your Email" name="Email" required 
+						on invalid="this.setCustomValidity('Please enter your email')" 
+						on input="this.setCustomValidity('')">
+						<label for="Email">Your Email <span style="color:red;">*</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="tel" id="phone" class="form-control" placeholder="Phone Number" name="Phone" required 
+						on invalid="this.setCustomValidity('Please enter your phone number')" 
+						on input="this.setCustomValidity('')" pattern="[1-9]{1}[0-9]{9}">
+						<label for="Phone">Phone Number <span style="color:red;">*</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="msg" placeholder="Leave a message here" style="height: 150px" name="Message" required 
+						on invalid="this.setCustomValidity('Please enter your message')" 
+						on input="this.setCustomValidity('')"></textarea>
+						<label for="Message">Message <span style="color:red;">*</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-primary-gradient rounded-pill py-3 px-5" type="submit">Send Message</button>
+					<span id="submit-error" style="color:red;"></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/smtp.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>  
+function sendEmail() {
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "Sasthahd2023@gmail.com",
+    Password : "Sasthahd@123",
+    To : "rpnithya90@gmail.com",
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}
+</script>
+
+</body>
+
+</html>
