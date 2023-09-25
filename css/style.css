@@ -462,10 +462,11 @@ h6,
     border: 1px solid rgba(256, 256, 256, .1);
     border-radius: 40px;
     transition: .3s;
+    background:#fff;
 }
 
 .footer .btn.btn-social:hover {
-    color: var(--primary);
+    background: #f7b66d;
 }
 
 .footer .btn.btn-link {
@@ -532,4 +533,20 @@ position: absolute;
 }
 .projects .owl-dot {
    margin:5px 5px;
+}
+.services li:hover{
+text-decoration: underline;
+}
+
+#upcoming figure figcaption {
+	position: absolute;
+	bottom: 15px;
+	background: rgba(0,0,0,0.3);
+	color: #fff;
+	width: 100%;
+	font-size: 20px;
+	padding: 10px;
+}
+#upcoming figure {
+    margin: 0;
 }
